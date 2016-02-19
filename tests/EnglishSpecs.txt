@@ -1,0 +1,53 @@
+//Behavior:
+Count an instance of a search word inside a search string
+
+//ex:
+word = "the"
+string = "Any way the wind blows"
+
+//Returns:
+1
+--------------------
+--------------------
+//Behavior:
+Count multiple instances of a search word inside a search string:
+
+//ex:
+word = "the"
+string = "So the man ate the sandwich"
+
+//Returns:
+2
+--------------------
+--------------------
+//Behavior:
+Manage mixed case entries
+
+//ex:
+word = "the"
+string = "The wind in the Willows."
+
+//Returns:
+2
+--------------------
+--------------------
+//Behavior:
+Manage partial matches
+
+//ex:
+word = "cat"
+string = "Let's play catch with the cat"
+
+//Returns:
+1
+--------------------
+--------------------
+//Behavior:
+Manage characters and punctuation
+
+//ex:
+word = "cat"
+string = "What a cute cat!"
+
+//Returns:
+1
