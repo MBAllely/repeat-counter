@@ -38,5 +38,17 @@
             // Assert
             $this->assertEquals(2, $result);
         }
+
+        function test_CountRepeats_Partial_Match()
+        {
+            // Arrange
+            $test_Count = new RepeatCounter;
+            $input = "cat";
+            $string = "Let's play catch with the cat";
+            // Act
+            $result = $test_Count->CountRepeats($input, $string);
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
  ?>
