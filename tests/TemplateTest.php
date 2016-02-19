@@ -12,7 +12,7 @@
             // Act
             $result = $test_Count->CountRepeats($input, $string);
             // Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("Your word was 'the' and it appeared 1 time(s).", $result);
         }
 
         function test_CountRepeats_Multiple()
@@ -24,7 +24,7 @@
             // Act
             $result = $test_Count->CountRepeats($input, $string);
             // Assert
-            $this->assertEquals(2, $result);
+            $this->assertEquals("Your word was 'the' and it appeared 2 time(s).", $result);
         }
 
         function test_CountRepeats_Mixed_Case()
@@ -36,7 +36,7 @@
             // Act
             $result = $test_Count->CountRepeats($input, $string);
             // Assert
-            $this->assertEquals(2, $result);
+            $this->assertEquals("Your word was 'the' and it appeared 2 time(s).", $result);
         }
 
         function test_CountRepeats_Mixed_Input_Case()
@@ -48,7 +48,7 @@
             // Act
             $result = $test_Count->CountRepeats($input, $string);
             // Assert
-            $this->assertEquals(2, $result);
+            $this->assertEquals("Your word was 'the' and it appeared 2 time(s).", $result);
         }
 
         function test_CountRepeats_Partial_Match()
@@ -60,7 +60,7 @@
             // Act
             $result = $test_Count->CountRepeats($input, $string);
             // Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("Your word was 'cat' and it appeared 1 time(s).", $result);
         }
 
         function test_CountRepeats_Ignore_NonLetters()
@@ -72,7 +72,7 @@
             // Act
             $result = $test_Count->CountRepeats($input, $string);
             // Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("Your word was 'cat' and it appeared 1 time(s).", $result);
         }
     }
  ?>

@@ -13,7 +13,7 @@ class RepeatCounter
                 $count += 1;
             }
         }
-        return $count;
+        return "Your word was '" . $input . "' and it appeared " . $count . " time(s).";
     }
 
 }

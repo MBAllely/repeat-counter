@@ -18,6 +18,7 @@
         $result = $new_counter->CountRepeats($_GET['input'], $_GET['string']);
         return $app['twig']->render('index.html.twig', array(
             'result' => array(
+                'input' => $_GET['input'],
                 'text' => $result
             )
         ));

@@ -1,12 +1,13 @@
 {% if form %}
+<h4>Input a word and a chunk of text to search to count the number of times your word appears there.</h4>
   <form action='/result'>
     <div class="form-group">
       <label for='input'></label>
-      <input name='input' id='input' type='text' class='form-control'>
+      <input required name='input' id='input' type='text' class='form-control'>
     </div>
     <div class="form-group">
       <label for='string'></label>
-      <textarea rows="4" cols="50" name='string' id='string' type='text' class='form-control' placeholder="Enter text to be searched here"></textarea>
+      <textarea required rows="4" cols="50" name='string' id='string' type='text' class='form-control' placeholder="Enter text to be searched here"></textarea>
     </div>
     <button type='submit' class='btn btn-primary'>Submit</button>
   </form>

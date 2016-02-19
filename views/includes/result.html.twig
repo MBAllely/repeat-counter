@@ -1,3 +1,9 @@
 {% if result %}
-    <div class="alert alert-{{ result.type }}" role="alert">{{ result.text }}</div>
+    <div class="alert alert-{{ result.type }}" role="alert">
+        {{ result.text }}
+        </p>
+        <form action="/">
+            <button type="submit" class="btn btn-primary">Again?</button>
+        </form>
+    </div>
 {% endif %}
