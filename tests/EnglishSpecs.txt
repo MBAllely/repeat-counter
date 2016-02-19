@@ -32,6 +32,17 @@ string = "The wind in the Willows."
 --------------------
 --------------------
 //Behavior:
+Manage mixed case entries
+
+//ex:
+word = "The"
+string = "The wind in the Willows."
+
+//Returns:
+2
+--------------------
+--------------------
+//Behavior:
 Manage partial matches
 
 //ex:

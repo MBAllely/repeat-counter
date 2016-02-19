@@ -39,6 +39,18 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_CountRepeats_Mixed_Input_Case()
+        {
+            // Arrange
+            $test_Count = new RepeatCounter;
+            $input = "The";
+            $string = "The wind in the willows";
+            // Act
+            $result = $test_Count->CountRepeats($input, $string);
+            // Assert
+            $this->assertEquals(2, $result);
+        }
+
         function test_CountRepeats_Partial_Match()
         {
             // Arrange
