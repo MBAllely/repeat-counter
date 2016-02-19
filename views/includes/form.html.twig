@@ -1,9 +1,13 @@
 {% if form %}
-  <form action='' method=''>
+  <form action='/result'>
     <div class="form-group">
-      <label for=''></label>
-      <input name='' id='' type='text' class='form-control'>
+      <label for='input'></label>
+      <input name='input' id='input' type='text' class='form-control'>
     </div>
-    <button type='submit' class='btn btn-success'>Submit</button>
+    <div class="form-group">
+      <label for='string'></label>
+      <textarea rows="4" cols="50" name='string' id='string' type='text' class='form-control' placeholder="Enter text to be searched here"></textarea>
+    </div>
+    <button type='submit' class='btn btn-primary'>Submit</button>
   </form>
 {% endif %}
