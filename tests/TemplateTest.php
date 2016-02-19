@@ -50,5 +50,17 @@
             // Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_CountRepeats_Ignore_NonLetters()
+        {
+            // Arrange
+            $test_Count = new RepeatCounter;
+            $input = "cat";
+            $string = "What a cute cat!";
+            // Act
+            $result = $test_Count->CountRepeats($input, $string);
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
  ?>
