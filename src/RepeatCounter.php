@@ -5,6 +5,7 @@ class RepeatCounter
     {
         $count = 0;
         $input = strtolower($input);
+        $input = preg_replace('/[^a-z]/i', '', $input);
         $string = strtolower($string);
         $string = preg_replace('/[^a-z]/i', ' ', $string);
         $split_string = explode(" ", $string);

@@ -9,10 +9,8 @@ body {
     background-size: cover;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.center {
+    text-align: center;
 }
 
 .result {
