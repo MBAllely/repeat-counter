@@ -9,7 +9,8 @@
 
     $app->get("/", function() use ($app) {
         return $app['twig']->render('index.html.twig', array(
-            'form' => true
+            'form' => true,
+            'cheeseform' => true
         ));
     });
 
@@ -18,9 +19,14 @@
         $result = $new_counter->CountRepeats($_GET['input'], $_GET['string']);
         return $app['twig']->render('index.html.twig', array(
             'result' => array(
-                'input' => $_GET['input'],
                 'text' => $result
             )
+        ));
+    });
+
+    $app->get("/cheese", function() use ($app) {
+        return $app['twig']->render('index.html.twig', array(
+            'cheese' => true
         ));
     });
 

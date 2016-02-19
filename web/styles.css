@@ -1,0 +1,25 @@
+footer {
+    text-align: center;
+}
+
+body {
+    background-image: url('http://jolt24.com/wp-content/uploads/2015/04/kraft-mac-and-cheese.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result {
+    background-color: white;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 8px;
+    text-align: center;
+    padding-bottom: 10px;
+}
