@@ -1,16 +1,18 @@
-<!-- testing with php unit, use this template for guidance -->
 <?php
-    require_once __DIR__ . '/../src/Class.php';
+    require_once __DIR__ . '/../src/RepeatCounter.php';
 
-    class ClassTest extends PHPUnit_Framework_TestCase
+    class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
-        function test_methodToTest_inputDescription()
+        function test_CountRepeats_Once()
         {
             // Arrange
-
+            $test_Count = new RepeatCounter;
+            $input = "the";
+            $string = "Any way the wind blows";
             // Act
-
+            $result = $test_Count->CountRepeats($input, $string);
             // Assert
+            $this->assertEquals(1, $result);
         }
     }
  ?>
