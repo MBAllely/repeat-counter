@@ -38,6 +38,6 @@ and tested with [PHPUnit](https://phpunit.de/)._
 
 ### License
 
-This software is licesensed under the MIT License.
+This software is licensed under the MIT License.
 
 Copyright (c) 2016 **_Marika Allely_** (resplendant in all her glory)
